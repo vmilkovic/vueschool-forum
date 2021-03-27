@@ -1,5 +1,8 @@
 # vueschool-forum
 
+## Vue School - The Vue.js 3 Masterclass
+- [x] Getting Started
+
 ## Project setup
 ```
 yarn install
