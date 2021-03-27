@@ -4,6 +4,7 @@
 
 - [x] Getting Started
 - [x] Application Structure
+- [x] Routing & Components Basics
 
 ## Project setup
 
