@@ -6,6 +6,7 @@
 - [x] Application Structure
 - [x] Routing & Components Basics
 - [x] Organizing the Application
+- [ ] Vuex and State Managment
 
 ## Project setup
 
