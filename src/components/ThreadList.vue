@@ -6,11 +6,14 @@
       <div v-for="thread in threads" :key="thread.id" class="thread">
         <div>
           <p>
-            <router-link :to="{name: 'ThreadShow', params: {id: thread.id}}">{{ thread.title }}</router-link>
+            <router-link
+              :to="{ name: 'ThreadShow', params: { id: thread.id } }"
+              >{{ thread.title }}</router-link
+            >
           </p>
           <p class="text-faded text-xsmall">
             By <a href="#">{{ userById(thread.userId).name }}</a
-            >, {{ thread.publishedAt }}.
+            >, <AppDate :timestamp="thread.publishedAt" />.
           </p>
         </div>
 
@@ -27,7 +30,9 @@
             <p class="text-xsmall">
               <a href="profile.html">{{ userById(thread.userId).name }}</a>
             </p>
-            <p class="text-xsmall text-faded">{{ thread.publishedAt }}</p>
+            <p class="text-xsmall text-faded">
+              <AppDate :timestamp="thread.publishedAt" />
+            </p>
           </div>
         </div>
       </div>
@@ -60,6 +65,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-</style>
